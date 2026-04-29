@@ -80,6 +80,10 @@ const translations = {
     "contact.desc": "Tell us what you need. We'll tell you what's possible. No jargon, no pressure — just a real conversation about your business.",
     "contact.wa": "💬 WhatsApp Us",
     "contact.email": "✉️ Send an Email",
+    "contact.walabel": "WhatsApp",
+    "contact.emaillabel": "Email",
+    "contact.locationlabel": "Location",
+    "contact.location": "Bissau, Guinea-Bissau",
     "footer.tagline": "Built to Serve. Driven to Impact. Designed to Evolve.",
     "footer.copy": "© 2026 ServeLab. All rights reserved."
   },
@@ -156,6 +160,10 @@ const translations = {
     "contact.desc": "Diga-nos o que precisa. Dizemos-lhe o que é possível. Sem jargão, sem pressão — apenas uma conversa real sobre o seu negócio.",
     "contact.wa": "💬 WhatsApp",
     "contact.email": "✉️ Enviar um Email",
+    "contact.walabel": "WhatsApp",
+    "contact.emaillabel": "E-mail",
+    "contact.locationlabel": "Localização",
+    "contact.location": "Bissau, Guiné-Bissau",
     "footer.tagline": "Construído para Servir. Movido pelo Impacto. Desenhado para Evoluir.",
     "footer.copy": "© 2026 ServeLab. Todos os direitos reservados."
   }

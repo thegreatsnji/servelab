@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ServeLab — Digital solutions company helping businesses in Guinea-Bissau and Africa grow with simple, effective technology." />
+  <meta name="theme-color" content="#080808" />
+
+  <title>ServeLab — Built to Serve. Driven to Impact. Designed to Evolve.</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/servelab-logo.png" />
+  <link rel="apple-touch-icon" href="images/servelab-logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo" aria-label="ServeLab Home">
+      <img src="images/servelab-logo.png" alt="ServeLab Logo" width="120" height="40" />
+    </a>
+
+    <div class="nav-right">
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="#about"    data-i18n="nav.about">About</a></li>
+        <li><a href="#values"   data-i18n="nav.values">Values</a></li>
+        <li><a href="#clients"  data-i18n="nav.clients">Clients</a></li>
+        <li><a href="#contact"  class="nav-cta" data-i18n="nav.cta">Get Started</a></li>
+      </ul>
+
+      <!-- Language Toggle -->
+      <div class="lang-toggle" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en')" aria-pressed="true">EN</button>
+        <button class="lang-btn"        data-lang="pt" onclick="setLang('pt')" aria-pressed="false">PT</button>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#about"    data-i18n="nav.about">About</a>
+    <a href="#values"   data-i18n="nav.values">Values</a>
+    <a href="#clients"  data-i18n="nav.clients">Clients</a>
+    <a href="#contact"  data-i18n="nav.cta">Get Started</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        <span data-i18n="hero.badge">Digital Solutions · Guinea-Bissau · Africa</span>
+      </div>
+
+      <h1 data-i18n="hero.h1">Built to <em>Serve.</em><br>Driven to Impact.</h1>
+
+      <p class="hero-sub" data-i18n="hero.sub">
+        We build simple, effective, and scalable digital systems that help businesses grow, attract customers, and operate with confidence.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary" data-i18n="hero.btn1">Explore Services →</a>
+        <a href="#contact"  class="btn-secondary" data-i18n="hero.btn2">Let's Talk</a>
+      </div>
+
+      <div class="hero-stats" aria-label="Key facts">
+        <div class="hero-stat">
+          <p class="hero-stat-label" data-i18n="hero.stat1l">Focus</p>
+          <p class="hero-stat-value">Africa<span>.</span></p>
+        </div>
+        <div class="hero-stat">
+          <p class="hero-stat-label" data-i18n="hero.stat2l">Approach</p>
+          <p class="hero-stat-value" data-i18n="hero.stat2v">Simple<span>.</span></p>
+        </div>
+        <div class="hero-stat">
+          <p class="hero-stat-label" data-i18n="hero.stat3l">Goal</p>
+          <p class="hero-stat-value" data-i18n="hero.stat3v">Impact<span>.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════ -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="services-header reveal">
+      <div>
+        <span class="section-label" data-i18n="services.label">What We Build</span>
+      <div class="divider-animated"></div>
+        <h2 id="services-heading" data-i18n="services.h2">Services that move<br>your business forward</h2>
+      </div>
+      <p class="section-desc services-header-desc" data-i18n="services.desc">
+        Every service is designed to solve a real problem — not just look impressive on paper.
+      </p>
+    </div>
+
+    <div class="services-grid reveal">
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">🌐</div>
+        <h3 class="service-title" data-i18n="s1.title">Website Development</h3>
+        <p class="service-desc"  data-i18n="s1.desc">Fast, mobile-first websites that give your business a credible online presence and attract real customers.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">⚙️</div>
+        <h3 class="service-title" data-i18n="s2.title">Custom Web Applications</h3>
+        <p class="service-desc"  data-i18n="s2.desc">Purpose-built web apps tailored to your workflows — from dashboards to internal management tools.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">📅</div>
+        <h3 class="service-title" data-i18n="s3.title">Booking & Appointment Systems</h3>
+        <p class="service-desc"  data-i18n="s3.desc">Let your customers book online, automatically. Reduce no-shows and free up your time.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">📊</div>
+        <h3 class="service-title" data-i18n="s4.title">Business Management Systems</h3>
+        <p class="service-desc"  data-i18n="s4.desc">Inventory, POS, and operations tools built for how small businesses actually run.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">💬</div>
+        <h3 class="service-title" data-i18n="s5.title">WhatsApp Integration & Automation</h3>
+        <p class="service-desc"  data-i18n="s5.desc">Connect WhatsApp to your business — automate bookings, orders, notifications, and customer replies.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">🚀</div>
+        <h3 class="service-title" data-i18n="s6.title">Digital Business Setup</h3>
+        <p class="service-desc"  data-i18n="s6.desc">Everything you need to go digital — from your first website to a complete online presence.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about" aria-labelledby="about-heading">
+
+    <!-- Visual Card Side -->
+    <div class="about-visual reveal">
+      <div class="about-card-main">
+        <p class="about-tagline" data-i18n="about.tagline">
+          We build systems that <span>evolve</span> with your business.
+        </p>
+        <p class="about-body-text" data-i18n="about.body">
+          ServeLab is a digital solutions company rooted in Africa. We understand the market, speak the language, and know that most businesses need practical tools — not overengineered platforms.
+        </p>
+        <div class="about-vision">
+          <p class="about-vision-label" data-i18n="about.visionlabel">Our Vision</p>
+          <p class="about-vision-text" data-i18n="about.vision">
+            To become a leading digital innovation company in Africa, creating systems that transform businesses and communities.
+          </p>
+        </div>
+        <div class="about-vision about-mission">
+          <p class="about-vision-label" data-i18n="about.missionlabel">Our Mission</p>
+          <p class="about-vision-text" data-i18n="about.mission">
+            To build simple and effective digital solutions that help businesses grow, solve real problems, and create meaningful impact.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text Side -->
+    <div class="about-text-side reveal">
+      <span class="section-label" data-i18n="why.label">Why ServeLab</span>
+      <div class="divider-animated"></div>
+      <h2 id="about-heading" data-i18n="why.h2">Your business deserves a partner, not just a vendor.</h2>
+
+      <ul class="why-list">
+        <li class="why-item">
+          <div class="why-check" aria-hidden="true">✓</div>
+          <div class="why-text">
+            <strong data-i18n="why1.title">Business-first approach</strong>
+            <span data-i18n="why1.desc">We understand your goals before we write a single line of code.</span>
+          </div>
+        </li>
+        <li class="why-item">
+          <div class="why-check" aria-hidden="true">✓</div>
+          <div class="why-text">
+            <strong data-i18n="why2.title">Simple and effective solutions</strong>
+            <span data-i18n="why2.desc">No bloat. No complexity for its own sake. Just tools that work.</span>
+          </div>
+        </li>
+        <li class="why-item">
+          <div class="why-check" aria-hidden="true">✓</div>
+          <div class="why-text">
+            <strong data-i18n="why3.title">Reliable and ongoing support</strong>
+            <span data-i18n="why3.desc">We don't disappear after launch. We grow with you.</span>
+          </div>
+        </li>
+        <li class="why-item">
+          <div class="why-check" aria-hidden="true">✓</div>
+          <div class="why-text">
+            <strong data-i18n="why4.title">Future-ready systems</strong>
+            <span data-i18n="why4.desc">Built to scale — from your first client to your thousandth.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       VALUES
+  ══════════════════════════════════════ -->
+  <section id="values" aria-labelledby="values-heading">
+    <div class="values-header reveal">
+      <span class="section-label" data-i18n="values.label">Our Core Values</span>
+    <div class="divider-animated"></div>
+      <h2 id="values-heading" data-i18n="values.h2">The principles behind every decision</h2>
+      <p class="section-desc" data-i18n="values.desc">Six values. One direction — meaningful, honest impact.</p>
+    </div>
+
+    <div class="values-grid reveal">
+      <div class="value-card">
+        <span class="value-icon" aria-hidden="true">🤝</span>
+        <p class="value-name" data-i18n="v1.name">Service</p>
+        <p class="value-desc"  data-i18n="v1.desc">Solving real problems for real people — that's why we exist.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon" aria-hidden="true">⚡</span>
+        <p class="value-name" data-i18n="v2.name">Simplicity</p>
+        <p class="value-desc"  data-i18n="v2.desc">Practical solutions that anyone can use and understand.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon" aria-hidden="true">💡</span>
+        <p class="value-name" data-i18n="v3.name">Innovation</p>
+        <p class="value-desc"  data-i18n="v3.desc">Continuous improvement — always evolving, never standing still.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon" aria-hidden="true">🎯</span>
+        <p class="value-name" data-i18n="v4.name">Impact</p>
+        <p class="value-desc"  data-i18n="v4.desc">Focusing on results that actually matter to your business.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon" aria-hidden="true">🔐</span>
+        <p class="value-name" data-i18n="v5.name">Integrity</p>
+        <p class="value-desc"  data-i18n="v5.desc">Honest, transparent relationships built on real trust.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon" aria-hidden="true">🌍</span>
+        <p class="value-name" data-i18n="v6.name">Community</p>
+        <p class="value-desc"  data-i18n="v6.desc">Technology should uplift people — we build with our communities in mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CLIENTS
+  ══════════════════════════════════════ -->
+  <section id="clients" aria-labelledby="clients-heading">
+    <div class="clients-header reveal">
+      <div>
+        <span class="section-label" data-i18n="clients.label">Who We Serve</span>
+        <h2 id="clients-heading" data-i18n="clients.h2">Built for businesses<br>ready to grow digitally</h2>
+      </div>
+      <p class="section-desc clients-header-desc" data-i18n="clients.desc">
+        From your local restaurant to a growing NGO — we help any business go digital.
+      </p>
+    </div>
+
+    <div class="clients-grid reveal">
+      <div class="client-pill">
+        <span class="client-pill-icon" aria-hidden="true">🍽️</span>
+        <span class="client-pill-text" data-i18n="c1">Restaurants & Cafés</span>
+      </div>
+      <div class="client-pill">
+        <span class="client-pill-icon" aria-hidden="true">🏨</span>
+        <span class="client-pill-text" data-i18n="c2">Hotels & Guesthouses</span>
+      </div>
+      <div class="client-pill">
+        <span class="client-pill-icon" aria-hidden="true">💇</span>
+        <span class="client-pill-text" data-i18n="c3">Salons & Beauty Services</span>
+      </div>
+      <div class="client-pill">
+        <span class="client-pill-icon" aria-hidden="true">🏢</span>
+        <span class="client-pill-text" data-i18n="c4">Small & Medium Businesses</span>
+      </div>
+      <div class="client-pill">
+        <span class="client-pill-icon" aria-hidden="true">🌱</span>
+        <span class="client-pill-text" data-i18n="c5">NGOs & Organizations</span>
+      </div>
+      <div class="client-pill">
+        <span class="client-pill-icon" aria-hidden="true">🚀</span>
+        <span class="client-pill-text" data-i18n="c6">Startups & Entrepreneurs</span>
+      </div>
+      <div class="client-pill">
+        <span class="client-pill-icon" aria-hidden="true">🛍️</span>
+        <span class="client-pill-text" data-i18n="c7">Local Retailers</span>
+      </div>
+      <div class="client-pill">
+        <span class="client-pill-icon" aria-hidden="true">🏥</span>
+        <span class="client-pill-text" data-i18n="c8">Health & Wellness</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="contact-inner reveal">
+      <div class="contact-content">
+        <span class="section-label" data-i18n="contact.label">Ready to start?</span>
+        <h2 id="contact-heading" data-i18n="contact.h2">Let's build something<br>that works for you.</h2>
+        <p class="section-desc" data-i18n="contact.desc">
+          Tell us what you need. We'll tell you what's possible. No jargon, no pressure — just a real conversation about your business.
+        </p>
+
+        <div class="contact-actions">
+          <a href="https://wa.me/919124914173" class="btn-whatsapp" target="_blank" rel="noopener noreferrer" data-i18n="contact.wa">
+            💬 WhatsApp Us
+          </a>
+          <a href="mailto:nijeozinho11ind@gmail.com" class="btn-secondary" data-i18n="contact.email">
+            ✉️ Send an Email
+          </a>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <span class="contact-detail-label">WhatsApp</span>
+            <a href="https://wa.me/919124914173" class="contact-detail-value" target="_blank" rel="noopener noreferrer">+91 91249 14173</a>
+          </div>
+          <div class="contact-detail-item">
+            <span class="contact-detail-label">Email</span>
+            <a href="mailto:nijeozinho11ind@gmail.com" class="contact-detail-value">nijeozinho11ind@gmail.com</a>
+          </div>
+          <div class="contact-detail-item">
+            <span class="contact-detail-label">Location</span>
+            <span class="contact-detail-value">Bissau, Guinea-Bissau</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-left">
+      <a href="#hero" class="footer-logo" aria-label="ServeLab Home">
+        <img src="images/servelab-logo.png" alt="ServeLab" width="100" height="32" />
+      </a>
+      <p class="footer-tagline" data-i18n="footer.tagline">
+        Built to Serve. Driven to Impact. Designed to Evolve.
+      </p>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-links">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#about"    data-i18n="nav.about">About</a>
+        <a href="#contact"  data-i18n="nav.cta">Contact</a>
+      </div>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 ServeLab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
